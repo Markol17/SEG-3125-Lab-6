@@ -1,0 +1,166 @@
+<!-- Made by Mark-Olivier Poulin, 300058025 for SEG 3125, Lab 1 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UEAT Survey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">
+        <img class="ueat-logo" src="/assets/images/ueat-logo.png" />
+        <p class="header-title">Survey</p>
+      </div>
+      <p class="header-text">
+        Before you start the survey, please familiarize yourself with our
+        website <a class="header-link" href="https://ueat.io/">here</a>
+      </p>
+    </div>
+    <div>
+      <a href="https://ueat.io/">
+        <img src="/assets/images/ueat.png" />
+      </a>
+    </div>
+    <div class="form">
+      <p class="question-title">Questions</p>
+      <form>
+        <div class="container">
+          <div class="question">
+            <p class="question-text">What is your name?</p>
+            <input name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="line"></div>
+          <p class="number">1</p>
+        </div>
+
+        <div class="container">
+          <p class="number">2</p>
+          <div class="line"></div>
+          <div class="question">
+            <p class="question-text">How did you hear about UEAT?</p>
+            <select name="source">
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Youtube">Youtube</option>
+              <option value="Website">Website</option>
+              <option value="Friend">Friend</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="question">
+            <p class="question-text">
+              What product do you use the most frequently?
+            </p>
+            <div class="question-answer-container">
+              <input
+                type="radio"
+                name="products"
+                value="Online Order"
+                required
+              />
+              <p class="question-answer">Online Order</p>
+            </div>
+            <br />
+            <div class="question-answer-container">
+              <input
+                type="radio"
+                name="products"
+                value="self-ordering Kiosk"
+                required
+              />
+              <p class="question-answer">Self-ordering kiosk</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <p class="number">3</p>
+        </div>
+
+        <div class="container">
+          <p class="number">4</p>
+          <div class="line"></div>
+          <div class="question">
+            <p class="question-text">
+              What devices have you used our platform on? (Select all that
+              apply)?
+            </p>
+            <div class="question-answer-container">
+              <input type="checkbox" name="platforms" value="Phone" />
+              <p class="question-answer">Phone</p>
+            </div>
+            <br />
+            <div class="question-answer-container">
+              <input type="checkbox" name="platforms" value="Tablet" />
+              <p class="question-answer">Tablet</p>
+            </div>
+            <br />
+            <div class="question-answer-container">
+              <input type="checkbox" name="platforms" value="PC" />
+              <p class="question-answer">PC</p>
+            </div>
+            <br />
+            <div class="question-answer-container">
+              <input type="checkbox" name="platforms" value="Other" />
+              <p class="question-answer">Other</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="question">
+            <p class="question-text">
+              What would you like to see improved on our platform?
+            </p>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="50"
+              rows="5"
+              placeholder="Your comments"
+              required
+            ></textarea>
+          </div>
+          <div class="line"></div>
+          <p class="number">5</p>
+        </div>
+
+        <div class="container">
+          <p class="number">6</p>
+          <div class="line"></div>
+          <div class="question">
+            <p class="question-text">
+              Would you recommend our platform to friends? (1-5)
+            </p>
+            <div class="rate-container">
+              <p class="rate">💩</p>
+              <input type="radio" name="rate" value="rate 1" />
+              <input type="radio" name="rate" value="rate 2" />
+              <input type="radio" name="rate" value="rate 3" />
+              <input type="radio" name="rate" value="rate 4" />
+              <input type="radio" name="rate" value="rate 5" />
+              <p class="rate">💯</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <button id="bb" class="submit" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="/assets/action.js"></script>
+  </body>
+  <footer>
+    <div class="form">
+      <p class="footer-text">
+        Website designed with ❤️ by Mark-Olivier Poulin
+      </p>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Names</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].name %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Sources</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].source %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Products</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].products %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Platforms</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].platforms %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Comments</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].comments %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Rating</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].rate %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+</body>
+</html>

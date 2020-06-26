@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: black;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.ueat-logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header-title {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-text {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-link {
+  font-size: 14px;
+  color: #ff5851;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.question-title {
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+}
+.question-text {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.question-answer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.question-answer {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 70vw;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 2000px;
+  padding: 50px 300px 50px 300px;
+  border-color: black;
+  border-width: 6px;
+  border-radius: 10px;
+  border-style: solid;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.question:hover {
+  border-color: #ff5851;
+}
+
+.line {
+  background-color: #80807f;
+  height: 2px;
+  width: calc(70vw - 700px);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.number {
+  color: #ff5851;
+  font-size: 140px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit {
+  padding: 13px 32px;
+  width: 250px;
+  background-color: transparent;
+  border-width: 6px;
+  border-radius: 10px;
+  border-color: black;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.submit:hover {
+  background-color: #ff5851;
+  border: 6px solid #ff5851;
+  color: white;
+}
+
+.nohover:hover {
+  border-color: black !important;
+}
+
+.footer-text {
+  color: #80807f;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+input[type='text'] {
+  width: 300px;
+  padding: 12px 20px;
+  display: inline-block;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type='text']:focus {
+  border: 2px solid #ff5851;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 20px;
+  display: inline-block;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+textarea:focus {
+  border: 2px solid #ff5851;
+}
+
+.rate-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.rate {
+  font-size: 35px;
+}
